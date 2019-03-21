@@ -1,0 +1,113 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-react"
+  ],
+  "jsRules": {
+    "max-line-length": [
+      true,
+      200
+    ],
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "trailing-comma": false
+  },
+  "rules": {
+    "adjacent-overload-signatures": true,
+    "arrow-parens": false,
+    "arrow-return-shorthand": false,
+    "curly": true,
+    "cyclomatic-complexity": [true, 36],
+    "interface-over-type-literal": true,
+    "jsx-alignment": false,
+    "jsx-curly-spacing": [
+      true,
+      "never"
+    ],
+    "jsx-no-lambda": true,
+    "jsx-no-multiline-js": false,
+    "linebreak-style": [true, "LF"],
+    "max-file-line-count": [true, 550],
+    "max-line-length": [
+      true,
+      200
+    ],
+    "member-access": true,
+    "new-parens": true,
+    "no-arg": true,
+    "no-bitwise": true,
+    "no-boolean-literal-compare": {
+      "severity": "warning"
+    },
+    "no-conditional-assignment": true,
+    "no-consecutive-blank-lines": [
+      true,
+      1
+    ],
+    "no-console": true,
+    "no-empty": true,
+    "no-invalid-template-strings": true,
+    "no-inferrable-types": true,
+    "no-magic-numbers": {
+      "options": [-2, -1, 0, 1, 2, 3, 4, 5],
+      "severity": "warning"
+    },
+    "no-shadowed-variable": true,
+    "no-this-assignment": true,
+    "no-trailing-whitespace": [
+      true,
+      "ignore-comments",
+      "ignore-template-strings",
+      "ignore-blank-lines"
+    ],
+    "no-unnecessary-semicolons": false,
+    "no-unnecessary-type-assertion": true,
+    "no-unused-expression": true,
+    "no-unused-variable": true,
+    "no-var-keyword": true,
+    "no-var-requires": false,
+    "object-literal-sort-keys": false,
+    "prefer-const": true,
+    "prefer-object-spread": true,
+    "prefer-template": true,
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ],
+    "radix": true,
+    "semicolon": [true, "always", "ignore-bound-class-methods"],
+    "trailing-comma": [true, {"multiline": "never", "singleline": "never"}],
+
+    "chai-prefer-contains-to-index-of": true,
+    "no-exec-script": true,
+    "mocha-avoid-only": true,
+    "no-banned-terms": true,
+    "no-constant-condition": true,
+    "no-disable-auto-sanitization": true,
+    "no-for-in": true,
+    "no-http-string": true,
+    "no-invalid-regexp": true,
+    "no-typeof-undefined": true,
+    "no-unnecessary-bind": true,
+    "no-unnecessary-local-variable": true,
+    "non-literal-require": true,
+    "promise-must-complete": true,
+    "react-a11y-aria-unsupported-elements": true,
+    "react-a11y-event-has-role": true,
+    "react-a11y-lang": true,
+    "react-a11y-props": true,
+    "react-a11y-tabindex-no-positive": true,
+    "react-anchor-blank-noopener": true,
+    "react-no-dangerous-html": true,
+    "react-this-binding-issue": true,
+    "react-unused-props-and-state": true,
+    "use-named-parameter": true
+  }
+}
