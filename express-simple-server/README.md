@@ -1,3 +1,3 @@
 # Expressjs simple web server
 
-Simpel expressjs server for å enkelt mocke rest tjenester under utvikling
+Simpel Express.js server that hosts a Json REST api for simple testing with client code.
