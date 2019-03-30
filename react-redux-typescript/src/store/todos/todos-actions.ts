@@ -29,8 +29,8 @@ export const fetchTodos = () => {
     };
 };
 
-export const getTodoById = (id: string): ThunkAction<void, AppState, null, Action<string>> => {
-    return (dispatch) => {
+export const getTodoById = (id: string) => {
+    return (dispatch: ThunkDispatch<AppState, void, Action>) => {
         dispatch(todoLoadingAction());
 
         return fetch(`${TODO_API_URL}/${id}`)
@@ -41,7 +41,7 @@ export const getTodoById = (id: string): ThunkAction<void, AppState, null, Actio
                 if (response.id) {
                     return dispatch(todoAddAction(response));
                 } else {
-                    return dispatch(todoErrorAction('No todosReducer found in response'));
+                    return dispatch(todoErrorAction('No todos found in response'));
                 }
             });
     };
