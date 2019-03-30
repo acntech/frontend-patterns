@@ -1,7 +1,8 @@
 import * as React from 'react';
 import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
 import {Action} from 'redux';
-import {ThunkAction, ThunkDispatch} from 'redux-thunk';
+import {ThunkDispatch} from 'redux-thunk';
 
 import {AppState} from '../../store';
 import {fetchTodos} from '../../store/todos';
@@ -37,7 +38,7 @@ class TodoList extends React.Component<TodoListProps> {
         );
     }
 
-    private renderTodo = (todo: ITodo) => (<li key={todo.id}>{todo.todo}</li>);
+    private renderTodo = (todo: ITodo) => (<li key={todo.id}><Link to={`todos/${todo.id}`}>{todo.shortDesc}</Link></li>);
 }
 
 const mapStateToProps = (state: AppState) => ({
@@ -45,9 +46,9 @@ const mapStateToProps = (state: AppState) => ({
 });
 
 const mapDispatchToProps = (dispatch: ThunkDispatch<AppState, void, Action>) => ({
-   fetchTodos: () => dispatch(fetchTodos())
+    fetchTodos: () => dispatch(fetchTodos())
 });
 
-const TodoListConnected = connect<ITodoListStateProps, ITodoListDispatchProps, {}>(mapStateToProps, mapDispatchToProps)(TodoList);
+const TodoListConnected = connect(mapStateToProps, mapDispatchToProps)(TodoList);
 
 export {TodoList, TodoListConnected};

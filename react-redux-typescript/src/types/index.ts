@@ -10,5 +10,6 @@ export interface ITodoList extends IRestEntity {
 
 export interface ITodo {
     id: string;
-    todo: string;
+    shortDesc: string;
+    message: string;
 }

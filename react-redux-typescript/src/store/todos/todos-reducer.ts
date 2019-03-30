@@ -3,8 +3,7 @@ import {TodoActionTypes} from '../action-keys';
 
 const initialState: ITodoList = {
     todos: [],
-    isLoading: false,
-    error: null
+    isLoading: false
 };
 
 export const todosReducer = (state = initialState, action: any): ITodoList => {

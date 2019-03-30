@@ -60,7 +60,7 @@ module.exports = {
         port: 9000,
         host: 'localhost',
         proxy: {
-            '/api': 'localhost:9001/api'
+            '/api': 'http://localhost:3000'
         }
     }
 }
