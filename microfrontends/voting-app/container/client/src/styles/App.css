@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+
+    grid-template-areas:
+        "header header"
+        "content side"
+        "footer footer";
+
+    grid-template-columns: 1fr 500px;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    grid-area: content;
+    background: #FBF8E6;
+}
+
+aside {
+    grid-area: side;
+    background: #E9E8E8;
+}
+
+footer {
+    grid-area: footer;
+}
+
+footer, header {
+    background: #C4E6E0;
+}
+
+footer, aside, main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
