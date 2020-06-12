@@ -1,0 +1,3 @@
+{
+    "typescript.tsdk": "../example-case-a/client/node_modules/typescript/lib"
+}
