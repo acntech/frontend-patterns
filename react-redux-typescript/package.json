@@ -8,7 +8,7 @@
     "lint": "tslint --config tslint.json --project tsconfig.json"
   },
   "dependencies": {
-    "lodash-es": "^4.17.15",
+    "lodash-es": "^4.17.21",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-redux": "^6.0.1",
